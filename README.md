@@ -1,58 +1,74 @@
-# QuizzWeb - Ứng Dụng Quiz Thời Gian Thực
+# 🎮 QuizzWeb – Ứng Dụng Quiz Thời Gian Thực
 
-Ứng dụng web quiz thời gian thực được xây dựng với React (frontend) và Node.js (backend), hỗ trợ phiên quiz trực tiếp và trải nghiệm chơi tương tác.
+**QuizzWeb** là một ứng dụng web quiz thời gian thực, được xây dựng phục vụ môn **Công Nghệ Web**.  
+Hệ thống cho phép nhiều người chơi tham gia trả lời câu hỏi trực tuyến với trải nghiệm tương tác cao, cập nhật kết quả ngay lập tức.
 
-## Tính Năng
+🔗 Demo: https://cong-nghe-web20251-quizz-web.vercel.app/
+<img width="1918" height="912" alt="image" src="https://github.com/user-attachments/assets/9db9d583-3094-41a4-ac7b-1a09411c4b07" />
+<img width="1900" height="907" alt="image" src="https://github.com/user-attachments/assets/cef49f90-01d3-4b95-b7cd-e3f3183fa854" />
+<img width="1917" height="907" alt="image" src="https://github.com/user-attachments/assets/b0ea24cd-6f9a-4885-8950-7a80710d2e95" />
+<img width="1916" height="912" alt="image" src="https://github.com/user-attachments/assets/9445aff1-dc45-4ccc-a9f5-4b12a2731cce" />
+<img width="1917" height="903" alt="image" src="https://github.com/user-attachments/assets/bada42b4-c4e9-485a-8a61-530f2c0596ec" />
 
-- **Phiên Quiz Thời Gian Thực** - Trò chơi quiz nhiều người chơi trực tuyến
-- **Giao Diện Tương Tác** - Giao diện người dùng hiện đại dựa trên React
-- **Tích Hợp Socket.io** - Giao tiếp thời gian thực giữa người chơi
-- **Thiết Kế Responsive** - Hoạt động trên cả desktop và mobile
-- **Material-UI Components** - Giao diện chuyên nghiệp và đẹp mắt
-- **Landing Page** - Trang giới thiệu sản phẩm với thiết kế dark theme hiện đại
+
+<img width="1023" height="567" alt="image" src="https://github.com/user-attachments/assets/0f6a67a8-b13e-4d14-ba0d-a6849347a24e" />
+
+---
+
+## 🚀 Tính Năng Chính
+
+- 🎯 **Quiz thời gian thực** với nhiều người chơi
+- 🔄 **Cập nhật dữ liệu realtime** bằng Socket.IO
+- 👨‍🏫 Hỗ trợ **host / teacher** tạo quiz
+- 👨‍🎓 Người chơi tham gia bằng mã phòng
+- 🎨 Giao diện hiện đại, **Dark Theme**
+- 📱 **Responsive** – hoạt động tốt trên desktop & mobile
+- 🧩 Sử dụng Material UI cho giao diện
+
+---
 
 ## 🛠️ Công Nghệ Sử Dụng
 
-### Frontend
-| Công nghệ                       | Dùng để làm gì                                             |
-| ------------------------------- | ---------------------------------------------------------- |
-| **HTML5**                       | Cấu trúc giao diện (câu hỏi, nút, layout cơ bản)           |
-| **CSS3**                        | Làm đẹp giao diện, bố cục, responsive                      |
-| **JavaScript (ES6+)**           | Logic chọn đáp án, đếm thời gian, xử lý sự kiện người dùng |
-| **React**                       | Tạo UI component, quản lý giao diện phức tạp               |
-| **React Router**                | Điều hướng chuyển trang trong ứng dụng React               |
-| **React state / Redux Toolkit** | Quản lý dữ liệu trạng thái (đáp án, thời gian, điểm)       |
-| **Axios hoặc Fetch API**        | Gọi API lấy câu hỏi hoặc gửi kết quả lên server            |
-| **Vite**                        | Công cụ dev server & build project React nhanh gọn         |
+### 🌐 Frontend
+- HTML5, CSS3
+- JavaScript (ES6+)
+- React
+- React Router
+- Axios / Fetch API
+- Vite
+- Material UI
 
+### ⚙️ Backend
+- Node.js
+- Express.js
+- Socket.IO
+- MongoDB
+- JWT Authentication
+- Babel
 
-### Backend
-- **Node.js + Express** - Framework server-side
-- **Socket.io** - Giao tiếp WebSocket thời gian thực
-- **MongoDB** - Cơ sở dữ liệu lưu trữ dữ liệu quiz
-- **JWT** - Xác thực và phân quyền
-- **Babel** - Biên dịch JavaScript
-
+---
 
 ## 📁 Cấu Trúc Thư Mục
 
-```
+```txt
 CongNgheWeb20251-QuizzWeb/
 ├── frontend/
-│   ├── landing_page/          # Trang giới thiệu sản phẩm (HTML/CSS)
+│   ├── landing_page/
 │   │   ├── quizzy.html
 │   │   └── quizzy.css
-│   ├── src/                   # Source code React chính
-│   │   ├── apis/              # Các API calls
-│   │   ├── assets/            # Hình ảnh, icons
-│   │   ├── components/        # React components
-│   │   └── ...
-│   └── public/
+│   ├── public/
+│   └── src/
+│       ├── apis/
+│       ├── assets/
+│       ├── components/
+│       ├── pages/
+│       ├── routes/
+│       └── main.jsx
+│
 └── backend/
     ├── src/
-    │   ├── routes/            # API routes
-    │   ├── controllers/       # Business logic
-    │   ├── models/            # Database models
-    │   └── server.js          # Entry point
-    └── ...
-```
+    │   ├── controllers/
+    │   ├── models/
+    │   ├── routes/
+    │   └── server.js
+    └── package.json
